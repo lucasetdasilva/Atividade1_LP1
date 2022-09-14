@@ -1,8 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Project/Maven2/JavaApp/src/main/java/${packagePath}/${mainClassName}.java to edit this template
- */
-
 package teste.celular;
 
 /**
@@ -17,6 +12,36 @@ public class Celular {
     private double ip;
     private String cor;
     private int carga;
+    private int foto;
+    private int audio;
+    private int app;
+
+    public int getAudio() {
+        return audio;
+    }
+
+    public void setAudio(int audio) {
+        this.audio = audio;
+    }
+
+    public int getApp() {
+        return app;
+    }
+
+    public void setApp(int app) {
+        this.app = app;
+    }
+    
+    
+
+    public int getFoto() {
+        return foto;
+    }
+
+    public void setFoto(int foto) {
+        this.foto = foto;
+    }
+    
 
     public String getNome() {
         return nome;
@@ -59,10 +84,20 @@ public class Celular {
     }
     
     
-    public void carregar(){
+    public String carregar(){
         carga = carga + 5;
-        System.out.println("Agora a bateria do seu Celular está" + getCarga() + "%");
-        
+        if (carga == 100){
+            return("A Bateria está cheia");
+            
+        }
+        else if (carga > 100){
+            carga = 0;
+            return("A Bateria foi zerada");
+        }
+        else{
+            return(String.valueOf(carga) + "%");
+        }
+             
     }
 
     public int getCarga() {
@@ -73,20 +108,26 @@ public class Celular {
         this.carga = carga;
     }
     
-    public void tirarFoto(String foto){
+    public void tirarFoto(){
+        foto = foto + 1;
         
     }
     
-    public void escutarAudio(String audio){
-        
-    }
-    
-    public void abrirfecharApp(){
-        
+    public void escutarAudio(){
+        audio = audio + 1;
     }
     
     public void abrirApp(){
+        app = app + 1;
         
+    }
+    
+    public String desligar(){
+        return("Desligado");
+    }
+    
+    public String ligar(){
+        return("Ligado");
     }
 
     /**
@@ -95,5 +136,4 @@ public class Celular {
     public static void main(String[] args) {
         // TODO code application logic here
     }
-    
 }
