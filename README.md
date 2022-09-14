@@ -17,4 +17,4 @@
 
 ## Exemplo
 
-![ScreenShot](tela.png)
+![Screenshot](tela.png)
