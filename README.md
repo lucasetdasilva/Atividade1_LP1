@@ -14,3 +14,7 @@
 | `IP` | Abrir App |
 | `Polegada` | Ligar/Desligar |
 | `Cor` | Ouvir Aúdio |
+
+## Exemplo
+
+![ScreenShot](tela.png)
