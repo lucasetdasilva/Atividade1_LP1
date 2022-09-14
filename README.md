@@ -5,3 +5,12 @@
 
 - No meu caso, criei uma classe denominada Celular;
 - Ela possui 5 atributos e 5 métodos.
+<br><br>
+
+| Atributos | Métodos |
+| --- | --- |
+| `Nome` | Tirar Foto |
+| `Marca` | Carregamento |
+| `IP` | Abrir App |
+| `Polegada` | Ligar/Desligar |
+| `Cor` | Ouvir Aúdio |
