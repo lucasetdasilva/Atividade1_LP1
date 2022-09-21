@@ -373,7 +373,7 @@ public class Tela extends javax.swing.JFrame {
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         try{
             FileWriter fw = new FileWriter(new File(CSV));
-            CSVWriter cw = new CSVWriter(fw);
+            CSVWriter cw = new CSVWriter(fw, true);
         
             String[] cabecalho = {"Nome", "Marca", "IP", "Polegada", "Cor"};
             ArrayList<String[]> data = new ArrayList<String[]>();
